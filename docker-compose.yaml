@@ -1,0 +1,8 @@
+services:
+  discord-bot:
+    image: minheagle/welcome-bot-discord:latest
+    container_name: study_with_minheagle_welcome-bot
+    restart: unless-stopped
+    environment:
+      - TOKEN=<token>
+      - CHANNEL_ID=<channel>
